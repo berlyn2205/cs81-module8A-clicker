@@ -40,12 +40,16 @@
    // Shows a different message at specific click milestones.
    if (clickCount === 10) {
         message.textContent = "🍪 You're just getting started!";
+        document.body.style.backgroundColor = "#fff3cd";
     } else if (clickCount === 25) {
         message.textContent = "🔥 Wow, that's a lot of cookies!";
+        document.body.style.backgroundColor = "#d1ecf1";
     } else if (clickCount === 50) {
         message.textContent = "😳 Are you still clicking?";
+        document.body.style.backgroundColor = "#f8d7da";
     } else if (clickCount === 100) {
         message.textContent = "🏆 You win! Maybe take a break!";
+        document.body.style.backgroundColor = "#d4edda";
     }
   });
 </script>
