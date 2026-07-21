@@ -15,5 +15,29 @@
 
   <p id="message">Start clicking to earn cookies!</p>
 
+<script>
+  // Selects the cookie button from the HTML page.
+  const cookieButton = document.getElementById("cookieButton");
+
+  // Selects the counter display so it can be updated.
+  const counter = document.getElementById("counter");
+
+  // Selects the message area for displaying progress messages.
+  const message = document.getElementById("message");
+
+  // Stores the number of times the cookie has been clicked.
+  let clickCount = 0;
+
+  // Runs this function every time the cookie button is clicked.
+  cookieButton.addEventListener("click", function() {
+
+    // Increases the click counter by one.
+    clickCount++;
+
+    // Updates the number shown on the webpage.
+    counter.textContent = clickCount;
+  });
+</script>
+
 </body>
 </html>
