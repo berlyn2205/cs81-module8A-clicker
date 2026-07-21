@@ -31,11 +31,22 @@
   // Runs this function every time the cookie button is clicked.
   cookieButton.addEventListener("click", function() {
 
-    // Increases the click counter by one.
-    clickCount++;
+   // Increases the number of clicks by one.
+   clickCount++;
 
-    // Updates the number shown on the webpage.
-    counter.textContent = clickCount;
+   // Updates the number shown on the webpage.
+   counter.textContent = clickCount;
+
+   // Shows a different message at specific click milestones.
+   if (clickCount === 10) {
+        message.textContent = "🍪 You're just getting started!";
+    } else if (clickCount === 25) {
+        message.textContent = "🔥 Wow, that's a lot of cookies!";
+    } else if (clickCount === 50) {
+        message.textContent = "😳 Are you still clicking?";
+    } else if (clickCount === 100) {
+        message.textContent = "🏆 You win! Maybe take a break!";
+    }
   });
 </script>
 
